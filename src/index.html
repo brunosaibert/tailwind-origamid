@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta
+      name="description"
+      content="Forest - uma landing page moderna desenvolvida com Tailwind CSS para explorar natureza, experiências e hospedagem."
+    />
+    <meta name="theme-color" content="#0f1c15" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
     <title>Forest</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Text&display=swap"
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
@@ -31,7 +36,15 @@
       class="container flex justify-between items-center gap-8 py-8 text-white"
     >
       <a href="/" class="text-2xl font-bold">
-        <img src="./img/forest.svg" alt="Forest" />
+        <img
+          src="./img/forest.svg"
+          alt="Forest"
+          width="140"
+          height="48"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
       </a>
       <nav
         id="menu"
@@ -104,14 +117,14 @@
       >
         <video
           id="video"
-          src="./img/video_sol.mp4"
           class="absolute inset-0 -z-10 size-full object-cover"
+          poster="./img/floresta.jpg"
           width="1280"
           height="720"
-          autoplay
           playsinline
           muted
           loop
+          preload="none"
         ></video>
         <div
           class="bg-verde-950/60 sm:bg-verde-950 flex sm:inline-flex flex-col sm:flex-row gap-2 sm:gap-8 items-start sm:items-center p-4 sm:py-1 sm:pr-1 sm:pl-4 rounded-xl sm:rounded-full mb-8"
@@ -196,6 +209,10 @@
             class="object-cover w-full h-52 rounded-2xl"
             src="./img/casa1.jpg"
             alt="Casa 1"
+            loading="lazy"
+            decoding="async"
+            width="900"
+            height="400"
           />
           <span
             class="uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none absolute top-2 right-2 backdrop-blur-sm"
@@ -207,6 +224,10 @@
             class="object-cover max-sm:h-52 size-full rounded-2xl"
             src="./img/casa2.jpg"
             alt="Casa 2"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="400"
           />
           <span
             class="uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none absolute top-2 right-2 backdrop-blur-sm"
@@ -218,6 +239,10 @@
             class="object-cover max-sm:h-52 size-full rounded-2xl"
             src="./img/casa3.jpg"
             alt="Casa 3"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="400"
           />
           <span
             class="uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none absolute top-2 right-2 backdrop-blur-sm"
@@ -350,6 +375,10 @@
             src="./img/canoagem.jpg"
             alt="Canoagem"
             class="size-full object-cover group-hover:scale-110 transition-transform duration-300"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="600"
           />
           <div
             class="absolute inset-0 bg-linear-to-t from-verde-950/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -364,6 +393,10 @@
             src="./img/observacao-noturna.jpg"
             alt="Observação Noturna"
             class="size-full object-cover group-hover:scale-110 transition-transform duration-300"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="900"
           />
           <div
             class="absolute inset-0 bg-linear-to-t from-verde-950/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -376,6 +409,10 @@
             src="./img/vida-selvagem.jpg"
             alt="Vida Selvagem"
             class="size-full object-cover group-hover:scale-110 transition-transform duration-300"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="600"
           />
           <div
             class="absolute inset-0 bg-linear-to-t from-verde-950/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -405,7 +442,15 @@
           class="flex-1 grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl sm:hover:-translate-y-2 transition-transform duration-300"
         >
           <div class="neon size-10 flex items-center justify-center">
-            <img src="./img/manha.svg" alt="" class="" />
+            <img
+              src="./img/manha.svg"
+              alt=""
+              class=""
+              loading="lazy"
+              decoding="async"
+              width="48"
+              height="48"
+            />
           </div>
           <h3 class="font-serif text-white text-2xl">Amanhecer</h3>
           <p class="text-gray-400 text-balance">
@@ -418,7 +463,15 @@
           class="flex-1 grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl sm:translate-y-12 sm:hover:translate-y-10 transition-transform duration-300"
         >
           <div class="neon size-10 flex items-center justify-center">
-            <img src="./img/dia.svg" alt="" class="" />
+            <img
+              src="./img/dia.svg"
+              alt=""
+              class=""
+              loading="lazy"
+              decoding="async"
+              width="48"
+              height="48"
+            />
           </div>
           <h3 class="font-serif text-white text-2xl">Meio-dia</h3>
           <p class="text-gray-400 text-balance">
@@ -431,7 +484,15 @@
           class="flex-1 grid gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl sm:hover:-translate-y-2 transition-transform duration-300"
         >
           <div class="neon size-10 flex items-center justify-center">
-            <img src="./img/noite.svg" alt="" class="" />
+            <img
+              src="./img/noite.svg"
+              alt=""
+              class=""
+              loading="lazy"
+              decoding="async"
+              width="48"
+              height="48"
+            />
           </div>
           <h3 class="font-serif text-white text-2xl">Anoitecer</h3>
           <p class="text-gray-400 text-balance">
@@ -509,19 +570,59 @@
         class="flex flex-col sm:flex-row sm:gap-8 justify-center items-center py-4 sm:py-8 max-sm:divide-y-2 divide-verde-900 sm:border-y-2 border-verde-900 *:p-4 *:*:max-h-8"
       >
         <li class="">
-          <img src="./img//parceiros/caravan.svg" alt="Caravan" class="" />
+          <img
+            src="./img//parceiros/caravan.svg"
+            alt="Caravan"
+            class=""
+            loading="lazy"
+            decoding="async"
+            width="120"
+            height="40"
+          />
         </li>
         <li class="">
-          <img src="./img//parceiros/dogs.svg" alt="Dogs" class="" />
+          <img
+            src="./img//parceiros/dogs.svg"
+            alt="Dogs"
+            class=""
+            loading="lazy"
+            decoding="async"
+            width="120"
+            height="40"
+          />
         </li>
         <li class="">
-          <img src="./img//parceiros/lescone.svg" alt="Lescone" class="" />
+          <img
+            src="./img//parceiros/lescone.svg"
+            alt="Lescone"
+            class=""
+            loading="lazy"
+            decoding="async"
+            width="120"
+            height="40"
+          />
         </li>
         <li class="">
-          <img src="./img//parceiros/surfbot.svg" alt="Surfbot" class="" />
+          <img
+            src="./img//parceiros/surfbot.svg"
+            alt="Surfbot"
+            class=""
+            loading="lazy"
+            decoding="async"
+            width="120"
+            height="40"
+          />
         </li>
         <li class="">
-          <img src="./img//parceiros/wildbeast.svg" alt="Wildbeast" class="" />
+          <img
+            src="./img//parceiros/wildbeast.svg"
+            alt="Wildbeast"
+            class=""
+            loading="lazy"
+            decoding="async"
+            width="120"
+            height="40"
+          />
         </li>
       </ul>
     </section>
@@ -573,11 +674,12 @@
       const dayElement = document.getElementById("day")
       const temperatureElement = document.getElementById("temperature")
       const weatherElement = document.getElementById("weather")
+      let hasLoadedVideo = false
 
       function updateWeather() {
         const now = new Date()
         const dayOfWeek = now.toLocaleDateString("pt-BR", { weekday: "long" })
-        const temperature = Math.floor(Math.random() * 10) + 20 // Random temperature between 20 and 29
+        const temperature = Math.floor(Math.random() * 10) + 20
         const weatherConditions = ["☀️", "⛅", "🌤️", "🌦️", "🌧️", "⛈️"]
 
         const weather =
@@ -586,17 +688,45 @@
           ]
 
         const isSunny = weatherConditions.indexOf(weather) <= 2
-
-        video.src = `./img/video_${isSunny ? "sol" : "chuva"}.mp4`
+        const source = `./img/video_${isSunny ? "sol" : "chuva"}.mp4`
 
         dayElement.textContent = dayOfWeek
         temperatureElement.textContent = `${temperature}°`
         weatherElement.textContent =
           weather + " " + (isSunny ? "" : Math.floor(Math.random() * 50) + "%")
+
+        if (hasLoadedVideo) {
+          video.src = source
+          video.load()
+        } else {
+          video.dataset.source = source
+        }
       }
 
-      setInterval(updateWeather, 60000) // Update every minute
-      updateWeather() // Initial call
+      function loadVideo() {
+        if (hasLoadedVideo) return
+        hasLoadedVideo = true
+        video.src = video.dataset.source || "./img/video_sol.mp4"
+        video.load()
+        video.play().catch(() => {})
+      }
+
+      setInterval(updateWeather, 60000)
+      updateWeather()
+
+      const startVideo = () => {
+        loadVideo()
+        window.removeEventListener("pointerdown", startVideo)
+        window.removeEventListener("keydown", startVideo)
+      }
+
+      window.addEventListener("pointerdown", startVideo, { once: true })
+      window.addEventListener("keydown", startVideo, { once: true })
+      window.addEventListener("scroll", startVideo, {
+        once: true,
+        passive: true,
+      })
+      window.setTimeout(loadVideo, 1500)
     </script>
   </body>
 </html>
